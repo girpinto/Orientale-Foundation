@@ -1,1 +1,20 @@
+# Tab Bars 
+> A tab bar appears at the bottom of an app screen and lets people quickly switch among different sections of an app. 
+> Tab bars are translucent, may have a background tint, maintain the same height in all screen orientations, and are hidden when a keyboard is displayed. 
+> A tab bar may contain any number of tabs, but the number of visible tabs varies based on the device size and orientation. 
+> If some tabs can’t be displayed due to limited horizontal space, the final visible tab becomes a More tab, which reveals the additional tabs in a list 
+> on a separate screen.
+> Human Interface Guidelines - Apple
 
+Ok let's begin the journey about **Tab Bars**. As you can read from **HIGS (Human Interface Guidelines)** by **Apple**, a Tab Bar is a way to organize your
+application/software. With Tab Bar you will have the possibility to separate views. But why you should divide views in your application. Well, the answer is very
+easy. 
+
+Because they don't have the same purpose. In fact in your application you'll have views that allow your user to do something very specific and views that help him
+just to store informations or maybe you'll have some views that are about a topic that is basically useless to link to other views. 
+
+Tab Bars' power is just this : *separate views that are about different topic/purposes*. But let's make an example. 
+
+# Example
+Below are just showed some applications that you use every day, I'm not the owner of this applications (obviously 🙄). The intent is just to show to anyone who
+read this file what are Tab Bars and why they're so powerful.  
