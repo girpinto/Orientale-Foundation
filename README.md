@@ -73,7 +73,7 @@ So Foundation' students I just have to wish you good luck for all your projects 
 **self** : In Swift/SwiftUI *self* is a special property of an instance that holds the instance itself. Most of the times *self* appears in an initializer or method of a class, structure or enumeration.
 **@State** : A *State* instance isn’t the value itself; it’s a means of reading and writing the value. To access a state’s underlying value, use its variable name, which returns the *wrappedValue* property value. You should only access a state property from inside the view’s body, or from methods called by it. For this reason, declare your state properties as private, to prevent clients of your view from accessing them. It is safe to mutate state properties from any thread.
 To pass a state property to another view in the view hierarchy, use the variable name with the **$** prefix operator. This retrieves a binding of the state property from its projectedValue property. For example, in the following code example **PlayerView** passes its state property **isPlaying** to **PlayButton** using **$isPlaying**:
-```
+```swift
 struct PlayerView: View {
     var episode: Episode
     @State private var isPlaying: Bool = false
