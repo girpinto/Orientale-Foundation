@@ -40,6 +40,7 @@ Before you dive into creating your views, there's a little vocabulary you must l
 - **let** : It's similar to **var** keyword but its value is constant and can't change. 
 - **class** : In the real world, you'll often find many individual objects all of the same kind. There may be thousands of other cars in existence, all of the same make and model. Each car was built from the same set of blueprints and therefore contains the same components. In object-oriented terms, we say that your car is an instance of the class of objects known as cars. A class is the blueprint from which individual objects are created. Inside a class you can define its properties and methods (functions that helps class to do something).
 - **struct** : In simple terms, a struct is like a custom data type which provides storage of data using properties with extended functionality using methods.
+- **enum** : An *enumeration* defines a common type for a group of related values and enables you to work with those values in a type-safe way within your code. If you are familiar with C, you will know that C enumerations assign related names to a set of integer values. Enumerations in Swift/SwiftUI are much more flexible, and don’t have to provide a value for each case of the enumeration. If a value (known as a raw value) is provided for each enumeration case, the value can be a string, a character, or a value of any integer or floating-point type.
 - **Framework** : In computer science and specifically in software development, it is a supporting logical architecture (often a logical implementation of a particular design pattern) on which a software can be designed and built, often facilitating its development by the programmer.
 - **Design Pattern** : Design pattern (architectural scheme), in computer science and especially in software engineering, is a concept that can be defined as "a general design solution to a recurring problem". It is a description or logical model to be applied for solving a problem that can arise in different situations during the software design and development phases, even before the definition of the solution algorithm.
 
@@ -67,6 +68,26 @@ Now, the best part: how it will work this repository? Well this repository was m
 Jokes besides, this repository will be open for you guys as well as you need it. In here you'll find some projects that you can use and don't worry they are free of charge, fuck to copyright. But remember guys these projects are not apps and they can't compose an app, they are just some tips on how to show some UI on your apps. So as I said before don't copy/paste these chuncks of code, they're useless alone and they work bad together. I'll try to comment as much as possible, even if swift developers hate this part because they say that Swift is in natural language and it can be understood also by a child. Well coders, fuck you I need explanations. 
 
 So Foundation' students I just have to wish you good luck for all your projects and I can't wait to see your work in action. Cheers 🍻 !!
+
+## Some "keywords" to keep in mind
+**self** : In Swift/SwiftUI *self* is a special property of an instance that holds the instance itself. Most of the times *self* appears in an initializer or method of a class, structure or enumeration.
+**@State** : A *State* instance isn’t the value itself; it’s a means of reading and writing the value. To access a state’s underlying value, use its variable name, which returns the *wrappedValue* property value. You should only access a state property from inside the view’s body, or from methods called by it. For this reason, declare your state properties as private, to prevent clients of your view from accessing them. It is safe to mutate state properties from any thread.
+To pass a state property to another view in the view hierarchy, use the variable name with the **$** prefix operator. This retrieves a binding of the state property from its projectedValue property. For example, in the following code example **PlayerView** passes its state property **isPlaying** to **PlayButton** using **$isPlaying**:
+```
+struct PlayerView: View {
+    var episode: Episode
+    @State private var isPlaying: Bool = false
+
+    var body: some View {
+        VStack {
+            Text(episode.title)
+            Text(episode.showTitle)
+            PlayButton(isPlaying: $isPlaying)
+        }
+    }
+}
+```
+**$** : The *$* is used in conjunction with property delegates. It's not an **operator**, but a **prefix**.
 
 # License
 [MIT](https://choosealicense.com/licenses/mit/)
