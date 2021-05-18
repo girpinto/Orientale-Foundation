@@ -1,8 +1,8 @@
 # Foundation
-This repository is intended to support Foundation' students. Here you'll find some tips and examples to complete your tasks with the new framework SwiftUI. In this repository you'll find some tips and tricks to go forward on your projects. As I always say to pepople who approach for the very first time to code, don't worry about syntax and grammar in code. Coding it's like to learn a new language and you're Orientale' students, so for you should be easy learning a new language. I just hope to give you a real support in this awesome journey and this is why I created this repository. I should give you just some recommendations : 
+This repository is intended to support Foundation' students. Here you'll find some tips and examples to complete your tasks with the new framework SwiftUI. In this repository you'll find some tips and tricks to go forward on your projects. As I always say to pepople who approach for the very first time to code, don't worry about syntax and grammar in code. Coding it's like to learn a new language and you're students, so for you should be easy learning a new language. I just hope to give you a real support in this awesome journey and this is why I created this repository. I should give you just some recommendations : 
 
 1. Don't use this repository as a guide, it's not intended to be that 
-2. Don't just copy/paste code that is wrote here, I know that you'll act in this way, but if you can try to understand what's happening
+2. Don't just copy/paste code that is wrote here, I know that you'll act in this way, but if you can try to understand what's happening it's better
 3. I'll try to explain every single line of code, but forgive me if I won't so accurate, theory is boring sometimes (I'm joking....maybe)
 4. Don't forget to swear and to say bad words during coding session, it helps a lot
 
